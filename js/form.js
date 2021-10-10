@@ -50,7 +50,8 @@ class Form{
             player.updateCount(0);
             game.update(0);
            //remove the player from the database
-            player.remove();
+           var playerRefInfo = database.ref('players');
+            playerRefInfo.remove();
         });
 
     }
